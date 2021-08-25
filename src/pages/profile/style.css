@@ -1,0 +1,106 @@
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 50px;
+    padding: 6px 0 6px 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.tweets-number {
+    opacity: 0.6;
+}
+.profile-header h4 {
+    font-weight: 900;
+}
+.profile-body {
+    position: relative;
+    height: 180px;
+    background-color: #C4CFD6;
+}
+.profile-user {
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.profile-user p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+.join-date {
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 8px 0;
+}
+.bold {
+    font-size: 14px;
+    font-weight: bold;
+}
+.profile-photo {
+    position: absolute;
+    bottom: -60px;
+    left: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(206, 213, 219);
+    border: 4px solid #fff;
+}
+.profile-btn {
+    position: absolute;
+    bottom: -42px;
+    right: 10px;
+    padding: 8px 12px;
+    color: var(--twitter-mainColor);
+    background: none;
+    border-radius: 30px;
+    border: 1px solid var(--twitter-mainColor);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.6s ease-out;
+}
+.profile-btn:hover {
+    background: rgb(226, 248, 241);
+}
+.light {
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: 400;
+}
+.bold:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+}
+.profile-user span:first-of-type {
+    margin-right: 12px;
+}
+.tweets-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.tweets-container > a {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.6;
+    font-size: 14px;
+    width: 25%;
+    margin: 0 auto;
+    line-height: 50px;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+.tweets-container a:hover {
+    background-color: var(--twitter-liteColor);
+    color: var(--twitter-mainColor);
+}
+.tweets-container a:focus {
+    border-bottom: 1px solid var(--twitter-mainColor);
+    color: var(--twitter-mainColor);
+}

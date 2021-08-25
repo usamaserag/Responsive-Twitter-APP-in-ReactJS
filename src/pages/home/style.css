@@ -1,0 +1,25 @@
+.home {
+    width: min(601px, 100%);
+}
+.home-header {
+    border-bottom: 1px solid var(--twitter-liteColor);
+    border-right: none;
+    border-left: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    width: 100%;
+    z-index: 101;
+    top: 0;
+    height: 50px;
+}
+.home-header > h3 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.home-icon {
+    font-size: 18px;
+}

@@ -1,0 +1,13 @@
+.logout-btn {
+    height: 40px !important;
+    width: 100px !important;
+    color: white !important;
+    background-color: var(--twitter-mainColor)!important;
+    border: none !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    margin-top: 40px !important;
+    margin-left: 20px !important;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,48 @@
+import React from "react";
+import "./style.css";
+
+function SidebarOption({ activePage, pageName, Icon, onClick }) {
+  return (
+      <div
+        className={`sidebaroption ${
+          activePage === pageName ? "sidebaroption-active" : ""
+        }`}
+        onClick={() => onClick(pageName)}
+      >
+        <Icon className="sidebar-icon" />
+        <h3>{pageName}</h3>
+      </div>
+  );
+}
+
+export default SidebarOption;
+
+
+/**************************************************************************/
+
+.sidebaroption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 14px;
+}
+.sidebaroption > h3 {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.sidebaroption:hover {
+    background-color: var(--twitter-liteColor);
+    color: var(--twitter-mainColor);
+    border-radius: 30px;
+    width: fit-content;
+    transition: 100ms ease-out;
+}
+.sidebaroption-active {
+    color: var(--twitter-mainColor);
+}
+.sidebar-icon {
+    font-size: 24px;
+    font-weight: lighter;
+}
